@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background: rgb(113, 31, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 31, 141, 1) 0%,
+    rgba(168, 24, 218, 1) 100%
+  );
+  color: #fff;
+}
+
+.header-logo {
+  width: 32px;
+}
+
+.header-project {
+  margin-right: 5vw;
+  margin-left: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.title-box > h2 {
+  padding-left: 10px;
+  letter-spacing: -2px;
+  font-size: 1.6rem;
+}
+
+.meme-container {
+  margin: 2rem 5vw;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  max-width: 600px;
+  gap: 1.2rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-input {
+  border: 2px solid #d5d4d8;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-button {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(113, 31, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 31, 141, 1) 0%,
+    rgba(168, 24, 218, 1) 100%
+  );
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+.meme-image {
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 3px;
+}
+
+.meme {
+  position: relative;
+}
+
+/* .meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+} */
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
